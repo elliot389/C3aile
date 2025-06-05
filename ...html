@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texte au-dessus</title>
+    <style>
+        .container {
+            position: relative; 
+            width: 300px;
+            height: 200px;
+           background-color: black;
+            background-image:url(./image/porte\ clée.jpg); ;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 50%; /* Centre verticalement */
+            left: 50%; /* Centre horizontalement */
+            transform: translate(-50%, -50%); /* Centre précisément */
+            background: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+            color: white; /* Couleur du texte */
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-overlay">Bijoux</div>
+        <div class="">
+        <image></image>
+    </div>
+</body>
+</html>
+
+
+
+7
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Zoom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="zoom-container">
+        <img src="./image/porte clée.jpg" alt="Zoomable Image" class="zoom-container">
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lien en bouton</title>
+    <style>
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff; /* Couleur du bouton */
+            text-decoration: none; /* Supprime le soulignement */
+            border-radius: 5px; /* Bordures arrondies */
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Animation douce */
+        }
+
+        .btn:hover {
+            background-color: #0056b3; /* Couleur au survol */
+        }
+    </style>
+</head>
+<body>
+    <a href="bijoux.html" class="btn">Les charms</a>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Zoom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="zoom-container">
+        <img src="./image/barette.jpg" alt="Zoomable Image" class="zoom-container">
+    </div>
+</body>
+</html>
+
+7
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutons avec Liens</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center; /* Aligner horizontalement */
+            flex-wrap: wrap; /* Permet d'aller à la ligne si nécessaire */
+            gap: 20px; /* Espacement entre les boutons */
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Boutons avec des Liens</h1>
+    <div class="btn-container">
+        <a href="index.html" class="btn">index</a>
+        <a href="about.html" class="btn">about</a>
+        <a href="boutique en ligne.html" class="btn">boutique</a>
+        <a href="contact.html" class="btn">contacte</a>
+    </div>
+</body>
+</html>
