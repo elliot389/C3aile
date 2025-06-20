@@ -3,157 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Texte au-dessus</title>
+    <title>Accueil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                 <li><a href="boutique-en-ligne.html">Bijoux</a></li>         
+                </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>C3ailes</h1>
+        <p> C3ailes</p>
+    </main>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aligner des images verticalement</title>
     <style>
         .container {
-            position: relative; 
-            width: 300px;
-            height: 200px;
-           background-color: black;
-            background-image:url(./image/porte\ clée.jpg); ;
+            display: flex; /* Active flexbox */
+            flex-direction: flex ; /* Aligne les images verticalement */
+            align-items: center; /* Centre horizontalement les images */
+            gap: 20px; /* Ajoute un espace entre les images */
         }
 
-        .text-overlay {
-            position: absolute;
-            top: 50%; /* Centre verticalement */
-            left: 50%; /* Centre horizontalement */
-            transform: translate(-50%, -50%); /* Centre précisément */
-            background: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
-            color: white; /* Couleur du texte */
-            padding: 10px 20px;
-            border-radius: 10px;
-            text-align: center;
+        img {
+            width: 1500px; /* Fixe la largeur de l'image */
+            height:auto; /* Conserve les proportions de l'image */
+            border-radius: 8px; /* Ajoute des coins arrondis */
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="text-overlay">Bijoux</div>
-        <div class="">
-        <image></image>
+    <div class="ligne">
+        <img src="image/Capture d'écran 2025-02-04 110240.png" alt="Image 1">
     </div>
 </body>
 </html>
 
 
 
-7
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Zoom</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+<html>
 <body>
-    <div class="zoom-container">
-        <img src="./image/porte clée.jpg" alt="Zoomable Image" class="zoom-container">
-    </div>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lien en bouton</title>
-    <style>
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
-            color: white;
-            background-color: #007bff; /* Couleur du bouton */
-            text-decoration: none; /* Supprime le soulignement */
-            border-radius: 5px; /* Bordures arrondies */
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s; /* Animation douce */
-        }
-
-        .btn:hover {
-            background-color: #0056b3; /* Couleur au survol */
-        }
-    </style>
-</head>
-<body>
-    <a href="bijoux.html" class="btn">Les charms</a>
-</body>
-
-</html>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Zoom</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="zoom-container">
-        <img src="./image/barette.jpg" alt="Zoomable Image" class="zoom-container">
-    </div>
-</body>
-</html>
-
-7
-
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boutons avec Liens</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
-
-        .btn-container {
-            display: flex;
-            justify-content: center; /* Aligner horizontalement */
-            flex-wrap: wrap; /* Permet d'aller à la ligne si nécessaire */
-            gap: 20px; /* Espacement entre les boutons */
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 15px 30px;
-            font-size: 18px;
-            color: white;
-            background-color: #007bff;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: background-color 0.3s;
-            cursor: pointer;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .btn:hover {
-            background-color: #0056b3;
-        }
-    </style>
-</head>
-<body>
-    <h1>Boutons avec des Liens</h1>
-    <div class="btn-container">
-        <a href="index.html" class="btn">index</a>
-        <a href="about.html" class="btn">about</a>
-        <a href="boutique en ligne.html" class="btn">boutique</a>
-        <a href="contact.html" class="btn">contacte</a>
-    </div>
+<h1>Hello World</h1>
+<p>I'm hosted with GitHub Pages.</p>
 </body>
 </html>
